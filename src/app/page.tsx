@@ -29,46 +29,47 @@ export default function Home() {
       </nav>
 
       {/* Hero Section */}
-      <section className="pt-32 pb-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          <div className="space-y-8 animate-fade-in-up">
-            <div className="inline-block bg-[#FFD166]/20 text-[#FFD166] px-4 py-1.5 rounded-full text-sm font-bold tracking-wide">
+      <section className="pt-32 pb-20 md:py-40 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
+          <div className="space-y-10 animate-fade-in-up order-2 lg:order-1">
+            <div className="inline-block bg-[#FFD166]/20 text-[#FFD166] px-5 py-2 rounded-full text-base font-bold tracking-wide shadow-sm">
               🎨 창의력이 쑥쑥 자라나요!
             </div>
-            <h1 className="text-5xl md:text-7xl font-black text-gray-900 leading-[1.1]">
-              아이들의 <br/>
-              <span className="relative inline-block">
-                <span className="relative z-10">상상력</span>
-                <span className="absolute bottom-2 left-0 w-full h-4 bg-[#06D6A0]/30 -z-0 rounded-full transform -rotate-1"></span>
+            <h1 className="text-6xl md:text-7xl lg:text-8xl font-black text-gray-900 leading-[1.05] tracking-tight">
+              아이들의 <br className="hidden md:block" />
+              <span className="relative inline-block mt-2">
+                <span className="relative z-10 text-transparent bg-clip-text bg-gradient-to-r from-[#EF476F] to-[#FFD166]">상상력</span>
+                <span className="absolute bottom-3 left-0 w-full h-6 bg-[#06D6A0]/20 -z-0 rounded-full transform -rotate-2"></span>
               </span>을 <br/>
-              그리는 곳
+              그리는 공간
             </h1>
-            <p className="text-lg text-gray-600 leading-relaxed max-w-md">
-              틀에 박힌 그림이 아닌, 아이들만의 이야기를 담아냅니다.
+            <p className="text-xl md:text-2xl text-gray-500 leading-relaxed max-w-lg font-medium">
+              틀에 박힌 그림이 아닌, <span className="text-gray-800 font-bold underline decoration-[#118AB2]/30 decoration-4">아이들만의 이야기</span>를 담아냅니다.
               다양한 재료와 기법으로 표현의 즐거움을 선물해주세요.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4">
-              <button className="px-8 py-4 bg-[#118AB2] hover:bg-[#0E7699] text-white rounded-full font-bold text-lg transition-all shadow-xl shadow-blue-200 transform hover:scale-105">
+            <div className="flex flex-col sm:flex-row gap-5 pt-4">
+              <button className="px-10 py-5 bg-[#118AB2] hover:bg-[#0E7699] text-white rounded-full font-bold text-xl transition-all shadow-xl shadow-blue-200 transform hover:scale-105 hover:-translate-y-1">
                 상담 예약하기
               </button>
-              <button className="px-8 py-4 bg-white border-2 border-gray-200 hover:border-[#118AB2] hover:text-[#118AB2] text-gray-600 rounded-full font-bold text-lg transition-all">
+              <button className="px-10 py-5 bg-white border-2 border-gray-100 hover:border-[#118AB2] hover:text-[#118AB2] text-gray-500 rounded-full font-bold text-xl transition-all shadow-sm hover:shadow-md">
                 작품 보러가기
               </button>
             </div>
           </div>
           
-          <div className="relative">
-            <div className="absolute top-0 right-0 w-64 h-64 bg-[#EF476F]/10 rounded-full blur-3xl -z-10 animate-blob"></div>
-            <div className="absolute bottom-0 left-0 w-64 h-64 bg-[#118AB2]/10 rounded-full blur-3xl -z-10 animate-blob animation-delay-2000"></div>
+          <div className="relative order-1 lg:order-2">
+            <div className="absolute top-0 right-0 w-80 h-80 bg-[#EF476F]/10 rounded-full blur-3xl -z-10 animate-blob mix-blend-multiply filter blur-xl"></div>
+            <div className="absolute bottom-0 left-0 w-80 h-80 bg-[#118AB2]/10 rounded-full blur-3xl -z-10 animate-blob animation-delay-2000 mix-blend-multiply filter blur-xl"></div>
+            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-80 h-80 bg-[#FFD166]/10 rounded-full blur-3xl -z-10 animate-blob animation-delay-4000 mix-blend-multiply filter blur-xl"></div>
             
-            <div className="grid grid-cols-2 gap-4">
-              <div className="space-y-4 mt-8">
-                <img src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?q=80&w=2071&auto=format&fit=crop" className="rounded-2xl shadow-lg w-full h-48 object-cover transform hover:scale-105 transition-transform duration-500" alt="Art Class 1"/>
-                <img src="https://images.unsplash.com/photo-1501084817091-a4f3d1d19e07?q=80&w=2070&auto=format&fit=crop" className="rounded-2xl shadow-lg w-full h-64 object-cover transform hover:scale-105 transition-transform duration-500" alt="Art Class 2"/>
+            <div className="grid grid-cols-2 gap-6 md:gap-8 transform hover:scale-[1.02] transition-transform duration-700">
+              <div className="space-y-6 md:space-y-8 mt-12 md:mt-16">
+                <img src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?q=80&w=2071&auto=format&fit=crop" className="rounded-3xl shadow-2xl w-full h-56 md:h-72 object-cover transform hover:rotate-2 transition-transform duration-500 hover:shadow-[#EF476F]/20" alt="Art Class 1"/>
+                <img src="https://images.unsplash.com/photo-1501084817091-a4f3d1d19e07?q=80&w=2070&auto=format&fit=crop" className="rounded-3xl shadow-2xl w-full h-72 md:h-96 object-cover transform hover:-rotate-2 transition-transform duration-500 hover:shadow-[#118AB2]/20" alt="Art Class 2"/>
               </div>
-              <div className="space-y-4">
-                <img src="https://images.unsplash.com/photo-1460518451285-97b6aa326961?q=80&w=2070&auto=format&fit=crop" className="rounded-2xl shadow-lg w-full h-64 object-cover transform hover:scale-105 transition-transform duration-500" alt="Art Class 3"/>
-                <img src="https://images.unsplash.com/photo-1452860606245-08befc0ff44b?q=80&w=2070&auto=format&fit=crop" className="rounded-2xl shadow-lg w-full h-48 object-cover transform hover:scale-105 transition-transform duration-500" alt="Art Class 4"/>
+              <div className="space-y-6 md:space-y-8">
+                <img src="https://images.unsplash.com/photo-1460518451285-97b6aa326961?q=80&w=2070&auto=format&fit=crop" className="rounded-3xl shadow-2xl w-full h-72 md:h-96 object-cover transform hover:rotate-1 transition-transform duration-500 hover:shadow-[#FFD166]/20" alt="Art Class 3"/>
+                <img src="https://images.unsplash.com/photo-1452860606245-08befc0ff44b?q=80&w=2070&auto=format&fit=crop" className="rounded-3xl shadow-2xl w-full h-56 md:h-72 object-cover transform hover:-rotate-1 transition-transform duration-500 hover:shadow-[#06D6A0]/20" alt="Art Class 4"/>
               </div>
             </div>
           </div>
@@ -76,18 +77,18 @@ export default function Home() {
       </section>
 
       {/* Curriculum Section */}
-      <section id="curriculum" className="py-24 bg-white relative overflow-hidden">
+      <section id="curriculum" className="py-24 md:py-32 bg-white relative overflow-hidden">
         {/* Decorative Blobs */}
-        <div className="absolute top-10 left-10 w-20 h-20 bg-[#FFD166] rounded-full opacity-20 blur-xl"></div>
-        <div className="absolute bottom-10 right-10 w-32 h-32 bg-[#EF476F] rounded-full opacity-20 blur-xl"></div>
+        <div className="absolute top-10 left-10 w-32 h-32 bg-[#FFD166] rounded-full opacity-20 blur-2xl"></div>
+        <div className="absolute bottom-10 right-10 w-48 h-48 bg-[#EF476F] rounded-full opacity-20 blur-2xl"></div>
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-5xl font-black text-gray-900 mb-4">다채로운 커리큘럼</h2>
-            <p className="text-gray-500">연령별, 수준별 맞춤 수업으로 기초부터 탄탄하게!</p>
+          <div className="text-center mb-20 md:mb-24">
+            <h2 className="text-4xl md:text-6xl font-black text-gray-900 mb-6 tracking-tight">다채로운 커리큘럼</h2>
+            <p className="text-xl text-gray-500 max-w-2xl mx-auto">연령별, 수준별 맞춤 수업으로 기초부터 탄탄하게! <br/>아이들의 눈높이에 맞춘 즐거운 미술 교육을 지향합니다.</p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-12 lg:gap-16">
             {[
               { title: "유치부 (5-7세)", desc: "오감 발달과 창의력 중심의 즐거운 미술 놀이", icon: Smile, color: "bg-[#FFD166]", text: "text-yellow-800" },
               { title: "초등부 (8-13세)", desc: "다양한 기법 탐구와 표현력 향상, 교과 연계", icon: PenTool, color: "bg-[#06D6A0]", text: "text-green-800" },
